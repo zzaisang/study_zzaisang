@@ -17,7 +17,7 @@ transaction isolation level이 serializable가 아니면 다른 transaction이 �
 //TO-BE
 @Lock(LockModeType.PESSIMISTIC_WRITE)
 @Query("SELECT l FROM x l INNER JOIN l.child c ON c.id = :id")
-List<LaundryGoGoodsDetail> findAllById(@Param("id") int goodsId);
+List<TableName> findAllById(@Param("id") int goodsId);
 ```
 
 자세한 내용은 아래 문서를 참조해주세요.
