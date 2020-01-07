@@ -1,4 +1,4 @@
-# 1.HTTP Method 중 PUT 과 PATCH 의 차이
+# HTTP Method 중 PUT 과 PATCH 의 차이
 
 - PUT : 자원의 전체 교체, 자원내 모든 필드영역 필요 (만약 일부만 전달 할 경우, 그 외의 필드 모두 null or 초기값 처리)
 
