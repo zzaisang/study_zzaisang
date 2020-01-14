@@ -50,3 +50,5 @@
 |0 15 10 ? * 6#3 | 매달 3번째 금요일 오전 10시 15분|
 |0 0 12 1/5 * ? | 매달 첫날부터 5일마다 12시(정오)|
 |0 11 11 11 11 ? | 매년 11월 11일 오전 11시 11분|
+
+참조자료 : <http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html>
