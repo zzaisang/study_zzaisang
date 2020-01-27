@@ -2,7 +2,7 @@
 
 ## 회사 또는 개인적으로 공부한 내용들을 기록하는 공간입니다.
 
-#기술 스팩 (서버개발)
+# 기술 스팩 (서버개발,프론트 개발,인프라)
 - **Language**
   - Java 8
 - **Build 도구**
@@ -25,7 +25,7 @@
   - AWS Code Build
   - AWS Code Deploy
   - AWS Code Pipeline
-- **FRONT **
+- **FRONT**
   - ES6
   - React.js
 - **기타**
