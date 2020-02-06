@@ -2,6 +2,8 @@
 
 ### 터미널 open
 
-###sudo lsof -i :"포트번호"
+```shell script
+  sudo lsof -i :"포트번호"
+```
 
 ![사진](./MacOsUsingPort.png)
