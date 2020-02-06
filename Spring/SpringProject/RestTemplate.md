@@ -4,7 +4,7 @@
 - BackEnd 에서 외부로 API 호출을 하기 위해 RestTemplate 를 많이 사용한다.
 하지만 RestTemplate 사용하기 위해서는 Bean 등록을 해줘야한다.
 - Bean 등록이 안되었을때 뜨는 "Could not autowire. No beans of 'RestTemplate' type found." 오류
-![사진](RestTemplate1.png)
+![사진](./img/RestTemplate1.png)
 
 ---
 ##### 해결 방법

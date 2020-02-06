@@ -12,7 +12,7 @@
 }
 ```
 
-![테이블](./REST_API_PUT_PATCH.jpg)
+![테이블](./img/REST_API_PUT_PATCH.jpg)
 
 
 참조 사이트 : https://papababo.tistory.com/269
