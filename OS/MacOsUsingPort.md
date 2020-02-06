@@ -6,4 +6,4 @@
   sudo lsof -i :"포트번호"
 ```
 
-![사진](./MacOsUsingPort.png)
+![사진](./img/MacOsUsingPort.png)
