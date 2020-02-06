@@ -3,6 +3,7 @@
 ### 덤프 옵션
  - 'u' : 아이디
  - 'p' : 비밀번호
+ - 'ysf_dev' : 대상 database(schema)
  - '>' : dump output 
  - '<' : dump input   
  - 'data-dump-ysf.sql' : 해당 파일로 input Or output
