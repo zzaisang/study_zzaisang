@@ -43,5 +43,30 @@
     ```
    
    - 이후 해당 branch 에서 push 하게되면 깔-꼼 하게 해결.
+
+- git stash 내역 지우기
+    - 특정 stash 지우기 ex -> git stash drop 'stash ID'  
+    ```shell script
+    git stash drop stash@{0}
+    ```
+    
+    - stash list 전체 삭제
+    ```shell script
+    git stash clear
+    ```  
+   
+- git stash 저장 후 브랜치 변경해서 적용하기.
+    - git stash list 확인 (브랜치 변경 후)
+    ```shell script
+    git stash list
+    stash@{0}: WIP on master: 049d078 added the index file
+    git stash apply stash@{0} 
+    ```
+    
+    - git stash 현재 브랜치에 저장 후 stash list 에서 삭제시키기. (apply 후 drop 처리.)
+    ```shell script
+    git stash pop
+    ```
+
    
 참조자료 : <https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning>   
