@@ -39,4 +39,29 @@ devfs                                                                          1
 map auto_home                                                                    0Bi    0Bi    0Bi   100%       0          0  100%   /System/Volumes/Data/home
  ```
 
+ - 마지막 컬럼 1개 
+```shell script
+sangjaekim@gimsangcBookPro  ~  df -h | awk '{print $NF}'
+on
+/
+/dev
+/System/Volumes/Data
+/private/var/vm
+/System/Volumes/Data/home
+/private/var/folders/rt/mvv1chv94sq2tr30f65jyhb80000gn/T/AppTranslocation/AA6BB639-835B-480B-BD5F-87C618902840
+```
+ 
+ - 마지막 컬럼 2개
+ 
+```shell script
+sangjaekim@gimsangcBookPro  ~  df -h | awk '{print $(NF-1) "\t" $NF}'
+Mounted	on
+0%	/
+100%	/dev
+0%	/System/Volumes/Data
+0%	/private/var/vm
+100%	/System/Volumes/Data/home
+0%	/private/var/folders/rt/mvv1chv94sq2tr30f65jyhb80000gn/T/AppTranslocation/AA6BB639-835B-480B-BD5F-87C618902840
+```  
+
 참조자료 : <https://recipes4dev.tistory.com/171>
