@@ -1,7 +1,7 @@
 # Maria DB 로컬 server 세팅
 
 ### Maria DB 설치 방법 
- - [MariaDB_Install](./MariaDB_Install.md)
+ - [MariaDB_Install](MariaDB_Install.md)
  
 ----
  - 서버 시작
@@ -12,7 +12,7 @@ mysql.server start
 ```shell script
 mysql
 ```
-![서버접속](./img/mysql_server_start.png)
+![서버접속](imgysql_server_start.png)
 
 ### root 계정 비밀번호 설정 
 
