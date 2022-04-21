@@ -126,3 +126,6 @@ db.inventory.find({status : "D"})
     ```
     db.inventory.deleteMany( { status: "A" } )
     ```
+    
+---
+출처 : https://www.mongodb.com/docs/manual/crud/
