@@ -17,11 +17,11 @@
    - 세마포어를 사용하는 프로세스는 그 값을 확인하고, 자원을 사용하는 동안에는 그 값을 변경함으로써 다른 세마포어 사용자들이 기다리도록 해야한다.
  - 세마포어는 이진수 (0 또는 1)를 사용하거나, 또는 추가적인 값을 가질 수도 있다.
 ##뮤텍스와 세마포어 차이
-가장 큰 차이점은 관리하는 동기화 대상의 개수
-Mutex는 동기화 대상이 오직 하나뿐일 때, Semaphore는 동기화 대상이 하나 이상일 때 사용한다.
-Semaphore는 Mutex가 될 수 있지만 Mutex는 Semaphore가 될 수 없다.
-Mutex는 상태가 0, 1 두 개 뿐인 binary Semaphore
-Semaphore는 소유할 수 없는 반면, Mutex는 소유가 가능하며 소유주가 이에 대한 책임을 가진다.
-Mutex 의 경우 상태가 두개 뿐인 lock 이므로 lock 을 가질 수 있다.
-Mutex의 경우 Mutex를 소유하고 있는 스레드가 이 Mutex를 해제할 수 있다. 하지만 Semaphore의 경우 이러한 Semaphore를 소유하지 않는 스레드가 Semaphore를 해제할 수 있다.
-Semaphore는 시스템 범위에 걸쳐있고 파일시스템상의 파일 형태로 존재하는 반면 Mutex는 프로세스 범위를 가지며 프로세스가 종료될 때 자동으로 Clean up 된다.
+ - 가장 큰 차이점은 관리하는 동기화 대상의 개수
+   - Mutex는 동기화 대상이 오직 하나뿐일 때, Semaphore는 동기화 대상이 하나 이상일 때 사용한다.
+ - Semaphore는 Mutex가 될 수 있지만 Mutex는 Semaphore가 될 수 없다.
+   - Mutex는 상태가 0, 1 두 개 뿐인 binary Semaphore
+ - Semaphore는 소유할 수 없는 반면, Mutex는 소유가 가능하며 소유주가 이에 대한 책임을 가진다.
+   - Mutex 의 경우 상태가 두개 뿐인 lock 이므로 lock 을 가질 수 있다.
+ - Mutex의 경우 Mutex를 소유하고 있는 스레드가 이 Mutex를 해제할 수 있다. 하지만 Semaphore의 경우 이러한 Semaphore를 소유하지 않는 스레드가 Semaphore를 해제할 수 있다.
+ - Semaphore는 시스템 범위에 걸쳐있고 파일시스템상의 파일 형태로 존재하는 반면 Mutex는 프로세스 범위를 가지며 프로세스가 종료될 때 자동으로 Clean up 된다.
