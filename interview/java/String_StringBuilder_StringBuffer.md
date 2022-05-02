@@ -1,22 +1,22 @@
 # String_StringBuilder_StringBuffer
 
-#String 
+# String 
 
 - String 은 immutable하다.
 - String으로 문자열을 조합하면 새로운 객체를 계속 생성하게 되어 메모리 낭비다.
 - 불변객체(immutable)이기 때문에 문자열 연산이 많은 프로그래밍을 할때 인스턴스를 계속 생성하므로 성능이 떨어지지만 조회가 많은 환경, MultiThread환경에서 성능적으로 유리하다.
 
-#StringBuilder
+# StringBuilder
 - StringBuilder는 mutable하다.
 - Thread Safe하지 않다.
 - jdk1.5부터는 String 에서 연산해도 StringBuilder로 컴파일 하게 만들어놨다.
 
-#StringBuffer
+# StringBuffer
 - mutable하다.
 - ThreadSafe하다.
 - MultiThread 환경에서 synchronized 키워드가 가능하여 동기화가 가능하다.
 
-#StringBuffer & StringBuilder 공통,차이점
+# StringBuffer & StringBuilder 공통,차이점
 ## 공통점 
 - 문자열 연산이 자주 발생할 때 변경가능한 객체이기 때문에 성능적으로 유리하다.
 
