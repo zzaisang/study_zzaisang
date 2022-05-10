@@ -16,3 +16,6 @@
 - 단지 다른 분야에선 다른 언어가 더 좋을 뿐이지 가능은 할 것이다.
 
 -> SQL 처럼 **어떤 목적이 있고, 그 목적만 달성할 수 있는 언어**를 DSL이라고 한다.
+
+---
+출처 : https://www.jetbrains.com/ko-kr/mps/concepts/domain-specific-languages/, https://lannstark.tistory.com/13
