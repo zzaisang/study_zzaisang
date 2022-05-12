@@ -20,7 +20,14 @@ $ sudo service docker start
 $ sudo systemctl enable docker
 ```
 
-## 4. sudo 없이 docker 명령어 실행할 수 있는지 확인
+## 4. sudo를 사용하지 않고도 Docker 명령을 실행할 수 있도록 docker 그룹에 ec2-user를 추가
+```shell
+$ sudo usermod -a -G docker ec2-user
+```
+
+## 4-1. ec2 ssh 재접속
+
+## 5. sudo 없이 docker 명령어 실행할 수 있는지 확인
 ```shell
 $ docker info 
 ```
