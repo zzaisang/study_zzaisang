@@ -63,3 +63,6 @@ DL 사용시 컨테이너 종속이 증가하기 때문에 주로 DI를 사용�
 ![출처 : https://dev-coco.tistory.com/80](./IoC_Container2.png)
 
 따라서 대부분의 어플리케이션에서는 빈팩토리 보다는 어플리케이션콘텍스트를 사용하는 것이 더 좋습니다.
+
+---
+출처 : https://dev-coco.tistory.com/80
