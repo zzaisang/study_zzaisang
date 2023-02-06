@@ -12,9 +12,7 @@ public class Application {
 		SpringApplication.run(FarmApplication.class, args);
 	}
 
-
 }
-
 ```
 
 - SecurityAutoConfiguration.class 같은 경우는 SpringSecurity를 Dependency 받은 상태.
