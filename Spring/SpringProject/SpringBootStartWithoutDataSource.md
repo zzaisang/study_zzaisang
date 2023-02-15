@@ -15,6 +15,17 @@ public class Application {
 }
 ```
 
+- 코틀린 버전 추가 ( 2가지 방법 존재)
+```kotlin
+//@SpringBootApplication(execlude = [DataSourceAutoConfiguration::class, HibernateJpaAutoConfiguration::class])
+@SpringBootApplication(execlude = arrayOf(DataSourceAutoConfiguration::class, HibernateJpaAutoConfiguration::class))
+class Application
+
+fun main(args: Array<String>){
+    runApplication<Application>(*args)
+}
+```
+
 - SecurityAutoConfiguration.class 같은 경우는 SpringSecurity를 Dependency 받은 상태.
 WebSecurityConfig 에 url 별로 경로를 열어주지 않으면 모든 url이 닫혀버리기 때문에 우선적으로 개발 시 해당 Bean을 실행시키지 않도록 추가해준다.
 
